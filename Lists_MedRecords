@@ -1,0 +1,46 @@
+names = ["Mohamed", "Sara", "Xia", "Paul", "Valentina", "Jide", "Aaron", "Emily", "Nikita", "Paul"]
+insurance_costs = [13262.0, 4816.0, 6839.0, 5054.0, 14724.0, 5360.0, 7640.0, 6072.0, 2750.0, 12064.0]
+
+#Question 1
+names.append("Priscilla")
+insurance_costs.append(8320.0)
+
+#Question 2
+medical_records = list(zip(insurance_costs, names))
+
+#Question 3
+print(medical_records)
+
+#Question 4
+num_medical_records = len(medical_records)
+
+#Question 5
+print("There are " + str(num_medical_records)+ " medical records.")
+
+#Question 6 & 7
+first_medical_record = medical_records[0]
+print("Here is the first medical record:")
+print(first_medical_record)
+
+#Question 9 & 10
+print("Here are the three cheapest insurance costs in our records:")
+medical_records.sort()
+cheapest_three = medical_records[:3]
+print(cheapest_three)
+
+#Question 11 & 12
+medical_records.sort(reverse=True)
+priciest_three = medical_records[:3]
+print("Here are the three most expensive insurance costs in our medical records: " + str(priciest_three))
+
+#Question 13
+occurences_paul = names.count("Paul")
+print("There are " + str(occurences_paul) + " individuals with the name Paul in our medical records.")
+
+#Question 14
+new_medRecords = list(zip(names, insurance_costs))
+new_medRecords.sort()
+
+middle_five_records = new_medRecords[3:8]
+
+print("There middle five records are: " + str(middle_five_records))
