@@ -66,3 +66,5 @@ for current_bmi in bmis:
 average_bmi = total_bmi/len(bmis)
 text1 = "Avege BMI: {}"
 print(text1.format(average_bmi\))
+
+#extra comment
